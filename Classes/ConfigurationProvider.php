@@ -87,9 +87,9 @@ class ConfigurationProvider implements SingletonInterface
         $wAssertSigned = false;
         $wAssertEncrypted = false;
 
-        $signatureAlgorithm = 'http://www.w3.org/2000/09/xmldsig#rsa-sha1';
+        $signatureAlgorithm = 'http://www.w3.org/2001/04/xmldsig-more#rsa-sha256';
 
-        $digestAlgorithm = 'http://www.w3.org/2000/09/xmldsig#sha1';
+        $digestAlgorithm = 'http://www.w3.org/2001/04/xmlenc#sha256';
 
         $lowerCaseUrlEncoding = false;
 
@@ -106,8 +106,8 @@ class ConfigurationProvider implements SingletonInterface
         $signMetadata = false;
 
         $defaultSSOBinding = 'urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect';
-        $defaultSig = 'http://www.w3.org/2000/09/xmldsig#rsa-sha1';
-        $defaultDigestAlg = 'http://www.w3.org/2000/09/xmldsig#sha1';
+        $defaultSig = 'http://www.w3.org/2001/04/xmldsig-more#rsa-sha256';
+        $defaultDigestAlg = 'http://www.w3.org/2001/04/xmlenc#sha256';
         $defaultNameID = 'urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress';
 
         $settings = [
