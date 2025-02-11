@@ -3,7 +3,7 @@
 $EM_CONF[$_EXTKEY] = [
     'title' => 'SAML Authentication',
     'description' => 'Authentication for SAML IDP',
-    'version' => '1.0.0',
+    'version' => '13.0.0',
     'state' => 'stable',
     'category' => 'misc',
     'author' => 'Sven Wappler',
@@ -11,7 +11,7 @@ $EM_CONF[$_EXTKEY] = [
     'author_company' => 'WapplerSystems',
     'constraints' => [
         'depends' => [
-            'typo3' => '11.0.0-11.5.99',
+            'typo3' => '13.4.0-13.4.99',
         ],
         'conflicts' => [],
         'suggests' => [],
