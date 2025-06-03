@@ -14,7 +14,6 @@ use Psr\Http\Message\ResponseInterface;
 use TYPO3\CMS\Core\Messaging\AbstractMessage;
 use TYPO3\CMS\Core\Site\Entity\Site;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
-use TYPO3\CMS\Extbase\Mvc\Exception\StopActionException;
 use TYPO3\CMS\Extbase\Utility\LocalizationUtility;
 use TYPO3\CMS\Frontend\Controller\TypoScriptFrontendController;
 use WapplerSystems\Samlauth\Exception\MissingConfigurationException;
@@ -59,7 +58,6 @@ class AuthController extends AbstractController
      *
      * @param string|null $subAction
      * @param string|null $redirectTo
-     * @throws StopActionException
      * @throws MissingConfigurationException
      */
     public function authAction(string $subAction = null, string $redirectTo = null): ResponseInterface

@@ -13,8 +13,8 @@ abstract class AbstractController extends ActionController {
     protected $samlSettings;
 
 
-    public function initializeAction() {
-
+    public function initializeAction(): void
+    {
 
         $this->configurationProvider = $this->objectManager->get(\WapplerSystems\Samlauth\ConfigurationProvider::class);
 
